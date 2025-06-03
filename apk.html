@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuda Design - Jasa Desain</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: black;
+      color: white;
+    }
+    .header {
+      background: white;
+      padding: 10px 30px;
+      font-weight: bold;
+      color: orange;
+      font-size: 20px;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+    }
+    .left {
+      max-width: 500px;
+    }
+    .left h1 {
+      font-size: 48px;
+      color: #a1ff00;
+      margin-bottom: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+    }
+    .left p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+    .cta {
+      margin: 20px 0;
+      font-weight: bold;
+      color: #a1ff00;
+    }
+    .btn {
+      display: block;
+      width: 150px;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #444;
+      color: white;
+      text-align: center;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #666;
+    }
+    .portfolio {
+      margin-top: 30px;
+    }
+    .portfolio a {
+      margin-right: 15px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
+    .portfolio a:hover {
+      color: #a1ff00;
+    }
+    .right img {
+      width: 400px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .footer {
+      text-align: center;
+      background: white;
+      color: orange;
+      padding: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">YUDA DESIGN</div>
+  <div class="hero">
+    <div class="left">
+      <h1>JASA DESIGN<br>LOGO DAN POSTER</h1>
+      <p>Bangun identitas visual yang kuat dan menarik perhatian dengan desain logo dan poster yang dirancang khusus untuk merek Anda.</p>
+      <div class="cta">pesan disini</div>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20desain%20logo" class="btn">LOGO</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20saya%20mau%20pesan%20desain%20poster" class="btn">POSTER</a>
+      <p>Dari branding bisnis sampai promosi event, saya siap bantu bikin desain yang eye-catching dan berkarakter.</p>
+      <div class="portfolio">
+        <strong>Lihat Portofolio</strong><br>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://behance.net" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="https://dribbble.com" target="_blank"><i class="fab fa-dribbble"></i></a>
+      </div>
+    </div>
+    <div class="right">
+      <a href="https://ibb.co/PsK802c7">
+        <img src="https://i.ibb.co/vCp8RN37/asdsad-removebg-preview-LE-upscale-magic-x4-strength-51-similarity-50-light-ai-100-tone-enhance-100.png" alt="Karakter Desain" border="0">
+      </a>
+    </div>
+  </div>
+  <div class="footer">Mulai Proyek <span style="color: red;">Hubungi Saya</span></div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+          console.log('ServiceWorker berhasil:', registration.scope);
+        }, function (err) {
+          console.log('ServiceWorker gagal:', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
